@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X1 VTCHOURAO E PERCYBOLA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #ff0000, #000000, #ff0000);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 5s infinite alternate;
+            color: #fff;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            animation: moveText 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateY(0);
+                color: #ffffff;
+            }
+            50% {
+                transform: translateY(-20px);
+                color: #000000;
+            }
+            100% {
+                transform: translateY(0);
+                color: #ffffff;
+            }
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container, .image-container2 {
+            position: relative;
+        }
+
+        .image-container img {
+            width: 220px;
+            height: 500px;
+            border-radius: 10px;
+            border-color: rgb(0, 0, 0);
+        }
+
+        .image-container2 img {
+            width: 230px;
+            height: 500px;
+            border-radius: 10px;
+            border-color: black;
+        }
+
+        .divider {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 29px;
+            background-image: url('blood2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button-container button:hover {
+            background-color: #200303;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>X1 PERCY⚽ VS CHORAO😭😭😭</h1>
+    <br> <br>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="perci.jpg" alt="Imagem percy">
+        </div>
+        <div class="divider"></div>
+        <div class="image-container2">
+            <img src="vitu.jpg" alt="Imagem vitu">
+        </div>
+    </div> 
+    
+    <center>
+        <div class="button-container">
+            <a href="https://wa.me//+5521995413564" target="_blank">
+                <button>Apostar</button>
+            </a>
+        </div>
+    </center>
+    
+    <script>
+    // Script para tocar música ao tocar na tela
+    document.addEventListener('click', function() {
+        var audio = new Audio('perci.opus');
+        audio.volume = 1.0;  // Define o volume alto
+        audio.play();
+    }, { once: true });  // O { once: true } garante que o evento só seja disparado uma vez
+    </script>
+</body>
+</html>
