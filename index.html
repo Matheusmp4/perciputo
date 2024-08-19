@@ -25,12 +25,13 @@
         }
 
         h2 {
-           
+            font-size: 1.8em;  /* Ajustado para melhor visibilidade */
             color: #ffffff;
             text-align: center;
             margin: 0;
             animation: moveText 2s ease-in-out infinite;
             position: relative;
+            line-height: 1.2;  /* Melhora a legibilidade */
         }
 
         @keyframes moveText {
@@ -39,7 +40,7 @@
                 color: #ffffff;
             }
             50% {
-                transform: translateY(-20px);
+                transform: translateY(-10px);
                 color: #000000;
             }
             100% {
@@ -51,38 +52,34 @@
         .container {
             display: flex;
             align-items: center;
+            justify-content: center; /* Centraliza as imagens horizontalmente */
+            flex-wrap: wrap; /* Permite que as imagens se movam para baixo em telas menores */
         }
 
         .image-container, .image-container2 {
             position: relative;
+            margin: 0 10px; /* Espaçamento entre as imagens */
         }
 
-        .image-container img {
+        .image-container img, .image-container2 img {
             width: 130px;
-            height: 240px;
-            border-radius: 10px;
-            border-color: rgb(0, 0, 0);
-        }
-
-        .image-container2 img {
-            width: 130px;
-            height: 290px;
+            height: auto;  /* Mantém a proporção da imagem */
             border-radius: 10px;
             border-color: black;
         }
 
         .divider {
-            position: relative;
             width: 90px;
             height: 90px;
-            margin: 0 29px;
             background-image: url('blood2.png');
             background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 15px; /* Espaçamento entre o divisor e as imagens */
         }
 
         .button-container {
-            margin-top: 25px;
+            margin-top: 20px;
         }
 
         .button-container button {
@@ -103,7 +100,6 @@
 <body>
 
     <h2>X1 PERCY⚽ VS CHORAO😭</h2>
-    <br> <br> <br> <br>
 
     <div class="container">
         <div class="image-container">
@@ -115,21 +111,12 @@
         </div>
     </div> 
     
-    <center>
-        <div class="button-container">
-            <a href="https://wa.me//+5521995413564" target="_blank">
-                <button>Apostar</button>
-            </a>
-        </div>
-    </center>
+    <div class="button-container">
+        <a href="https://wa.me//+5521995413564" target="_blank">
+            <button>Apostar</button>
+        </a>
+    </div>
     
     <script>
     // Script para tocar música ao tocar na tela
-    document.addEventListener('click', function() {
-        var audio = new Audio('perci.opus');
-        audio.volume = 1.0;  // Define o volume alto
-        audio.play();
-    }, { once: true });  // O { once: true } garante que o evento só seja disparado uma vez
-    </script>
-</body>
-</html>
+    document.addEventListener('click', functi
