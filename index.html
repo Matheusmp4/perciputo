@@ -25,7 +25,7 @@
         }
 
         h1 {
-            font-size: 2em;  /* Ajustado para melhor visibilidade em dispositivos móveis */
+            font-size: 1em;
             color: #ffffff;
             text-align: center;
             margin: 0;
@@ -50,34 +50,35 @@
 
         .container {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            text-align: center;
         }
 
         .image-container, .image-container2 {
             position: relative;
-            width: 80vw;  /* Ajustado para responsividade */
-            max-width: 100px;
         }
 
-        .image-container img, .image-container2 img {
-            width: 100%;
-            height: auto;  /* Mantém a proporção da imagem */
+        .image-container img {
+            width: 100px;
+            height: 250px;
+            border-radius: 10px;
+            border-color: rgb(0, 0, 0);
+        }
+
+        .image-container2 img {
+            width: 100px;
+            height: 200px;
             border-radius: 10px;
             border-color: black;
         }
 
         .divider {
             position: relative;
-            width: 40vw;  /* Ajustado para responsividade */
-            max-width: 150px;
-            height: auto; /* Ajusta a altura conforme necessário */
+            width: 90px;
+            height: 90px;
+            margin: 0 29px;
             background-image: url('blood2.png');
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center;
-            margin: 20px 0;
         }
 
         .button-container {
